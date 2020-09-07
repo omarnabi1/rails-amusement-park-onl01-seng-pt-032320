@@ -1,0 +1,27 @@
+<%= form_with model: @attraction do |f| %>  
+    <div>
+    <%= f.label(:name, "Name:") %>
+    <%= f.text_field :name %>
+    </div>
+    <div>
+    <%= f.label(:tickets, "Tickets:") %>
+    <%= f.text_field :tickets %>
+    </div>
+    <div>
+    <%= f.label(:nausea_rating, "Nausea Rating:") %>
+    <%= f.text_field :nausea_rating %>
+    </div>
+    <div>
+    <%= f.label(:happiness_rating, "Happiness Rating:") %>
+    <%= f.text_field :happiness_rating %>
+    </div>
+    <div>
+    <%= f.label(:min_height, "Min Height:") %>
+    <%= f.text_field :min_height %>
+    </div>
+
+    <%= f.submit("Update Attraction") %>
+<% end %>  
+
+<%= link_to 'Show', @attraction %> |
+<%= link_to 'Back', attractions_path %> 
